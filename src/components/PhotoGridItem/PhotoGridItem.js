@@ -45,12 +45,19 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  max-width: 100%;
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: -4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 const Tag = styled.li`
+  margin-left: 4px;
+  margin-right: 4px;
+  display: inline;
   padding: 4px 8px;
   background: var(--color-gray-300);
   font-size: 0.875rem;
